@@ -1,0 +1,56 @@
+$primary-color: #000000;
+$secondary-color: #000000;
+$font-size-h1: 3rem;
+$font-size-h2: 2.25rem;
+$font-size-h3: 1.875rem;
+
+h1 {
+  font-size: $font-size-h1;
+  color: $primary-color;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  color: $secondary-color;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  color: rgb(0, 0, 0);
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+section {
+    display: flex;              // Enable Flexbox
+    justify-content: center;    // Horizontally center the content
+    align-items: center;        // Vertically center the content
+    min-height: 70vh;          // Ensure the section takes at least the full height of the viewport
+    margin: 0;                  // Remove any default margin
+}
+
+section.columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    margin: 0;      
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div {
+    padding: 0%;
+}
