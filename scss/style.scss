@@ -14,3 +14,7 @@
 @use 'sections/intro-section';
 @use 'sections/feature-cards';
 @use 'sections/un-goals';
+
+body {
+    background-color: rgb(56, 56, 56);
+}

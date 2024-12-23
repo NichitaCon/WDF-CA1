@@ -11844,6 +11844,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.display-2 {
+  color: white;
+  font-family: Poppins;
+}
+.display-2--intro {
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.display-2--description {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.456px;
+}
+
 .bar {
   padding: 22px 40px;
 }
@@ -11864,6 +11882,21 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: normal;
   padding: 0px;
+}
+
+.intro-section {
+  background-image: url("../../images/AppBackground_00000.png");
+  height: 1080px;
+}
+.intro-section .left-side {
+  height: 1080px;
+  background: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(74.3499984741px);
+  padding: 0px 50px;
+}
+
+body {
+  background-color: rgb(56, 56, 56);
 }
 
 /*# sourceMappingURL=style.css.map */

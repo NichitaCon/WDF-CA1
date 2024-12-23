@@ -1,0 +1,21 @@
+
+.display-2 {
+
+    color: white;
+    font-family: Poppins;
+
+    &--intro {
+        font-size: 74px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &--description {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.456px;
+    }
+}
