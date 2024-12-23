@@ -51,6 +51,35 @@ section {
   margin: 0;
 }
 
+$nav-link-padding-x: 0; // Horizontal padding
+$nav-link-padding-y: 0; // Vertical padding
+
+@import "bootstrap"; // Import Bootstrap after setting variables
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-link {
+    padding: 0px;
+}
+
+.navbar-nav, .navbar-brand {
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 58px;
+    border-radius: 64px;
+    background: rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(20.25px);
+
+}
+
 section.columns {
   display: flex;
   justify-content: center;
