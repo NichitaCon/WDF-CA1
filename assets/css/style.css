@@ -12135,7 +12135,12 @@ h2 {
 }
 
 .signUp-section {
-  margin-top: 122px;
+  background-image: url("../../images/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding-top: 122px;
 }
 .signUp-section .signUp {
   border-radius: 16px;
@@ -12160,7 +12165,10 @@ h2 {
 }
 
 body {
-  background-color: rgb(56, 56, 56);
+  background-image: url("../../images/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */
