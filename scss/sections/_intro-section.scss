@@ -1,31 +1,80 @@
 .intro-section {
-    background-image: url('../../images/AppBackground_00000.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+  background-image: url("../../images/AppBackground_00000.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+
+  .container-fluid {
+    height: 100%;
+
+    .row {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .left-side {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(40px);
+        padding: 10vh 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .right-side {
+        height: 100%;
+        background-image: url("../../images/AppBackground_00000.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
+  }
+
+
+  @media (max-width: 1200px) {
+    .display-2--intro {
+      font-size: 3.5rem;
+    }
+    .display-2--description {
+        font-size: 1rem;
+      }
+  }
+
+  @media (max-width: 880px) {
+    height: auto;
 
     .container-fluid {
-        height: 100%; /* Ensure the container takes the full height */
+      .row {
+        flex-direction: column-reverse;
+        height: auto;
 
-        .row {
-            height: 100%; /* Ensure the row takes the full height */
-
-            .left-side {
-                height: 100%; /* Make the left-side div take the full height of the intro-section */
-                background: rgba(0, 0, 0, 0.85);
-                backdrop-filter: blur(40px);
-                padding: 10vh 5vw 10vh 5vw;
-            }
-        }
-    }
-
-
-
-
-    @media (max-width: 768px) {
         .left-side {
-            padding: 20px; /* Adjust padding for smaller screens */
+          background: radial-gradient(
+            circle,
+            rgba(19, 0, 12, 0.8) 0%,
+            rgba(0, 0, 0, 0.884) 100%
+          );
+          width: 100%;
+          height: 40vh;
+          padding: 20px;
+
+          .display-2--intro {
+            font-size: 2.5rem;
+          }
+          .display-2--description {
+            font-size: 1rem;
+          }
         }
+
+        .right-side {
+          width: 100%;
+          height: 60vh;
+        }
+      }
     }
+  }
 }
