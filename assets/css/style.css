@@ -11871,7 +11871,8 @@ body {
   width: 100vw;
 }
 .navbar button {
-  padding: 16px;
+  font-size: 1.5rem;
+  padding: 21px;
   color: #fff;
   background: rgba(91, 91, 91, 0.33);
   backdrop-filter: blur(20.25px);
@@ -11998,24 +11999,51 @@ body {
 
 .carousel {
   padding: 0px;
-  border-radius: 58px;
+  border-radius: 16px;
   overflow: hidden;
   margin-top: 122px;
 }
-
-.carousel-item {
+.carousel .carousel-indicators {
+  margin-bottom: 5px;
+}
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+.carousel .sideButton i {
+  font-size: 2rem;
+  padding: 16px;
+  color: #fff;
+  background: rgba(51, 51, 51, 0.45);
+  backdrop-filter: blur(40.25px);
+  border-radius: 64px;
+  border: none;
+  outline: none;
+}
+.carousel .carousel-inner .carousel-item {
   height: 80vh;
 }
-
-.carousel-item img {
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  border-radius: 16px;
+  background: rgba(51, 51, 51, 0.45);
+  backdrop-filter: blur(40px);
+  padding: 16px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption p {
+  margin: 0px;
+  font-weight: 300;
+}
+.carousel .carousel-inner .carousel-item img {
   object-fit: cover;
   height: 100%;
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border-radius: 10px;
 }
 
 .signUp-container {
