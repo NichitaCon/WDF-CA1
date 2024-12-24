@@ -1,8 +1,37 @@
-.signUp-container {
+.signUp-section {
     margin-top: 122px;
+
+    .signUp {
+        border-radius: 16px;
+        overflow: hidden;
+        h2 {
+            color: white;
+            margin: 0px;
+            background-color: rgb(0, 0, 0);
+            padding: 16px;
+        }
+
+        form {
+            padding: 16px;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    // @media (min-width: 570px) {
+    //     .signUp {
+    //         max-width: 80vw; /* Set a max-width for screens wider than 570px */
+    //         margin: 0 auto; /* Center the form horizontally */
+    //     }
+    // }
+    
+
+    
+    @media (min-width: 1400px) {
+        .signUp {
+            max-width: 40vw; /* Set a max-width for screens wider than 1400px */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+    }
 }
 
-form {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.1); // dim border
-}
