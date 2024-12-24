@@ -11952,6 +11952,33 @@ body {
   height: auto;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 body {
   background-color: rgb(56, 56, 56);
 }
