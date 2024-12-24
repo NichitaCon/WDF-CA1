@@ -11868,6 +11868,7 @@ body {
 }
 
 .bar {
+  position: fixed;
   padding: 22px 40px;
 }
 .bar ul,
@@ -11891,13 +11892,27 @@ body {
 
 .intro-section {
   background-image: url("../../images/AppBackground_00000.png");
-  height: 1080px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
-.intro-section .left-side {
-  height: 1080px;
-  background: rgba(0, 0, 0, 0.644);
-  backdrop-filter: blur(74.3499984741px);
-  padding: 0px 50px;
+.intro-section .container-fluid {
+  height: 100%; /* Ensure the container takes the full height */
+}
+.intro-section .container-fluid .row {
+  height: 100%; /* Ensure the row takes the full height */
+}
+.intro-section .container-fluid .row .left-side {
+  height: 100%; /* Make the left-side div take the full height of the intro-section */
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(40px);
+  padding: 10vh 5vw 10vh 5vw;
+}
+@media (max-width: 768px) {
+  .intro-section .left-side {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
 }
 
 .app-features .row {
@@ -11952,13 +11967,15 @@ body {
   height: auto;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+.carousel {
+  padding: 0px;
+  border-radius: 58px;
+  overflow: hidden;
+  margin-top: 122px;
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 80vh;
 }
 
 .carousel-item img {
@@ -11966,17 +11983,14 @@ html, body {
   height: 100%;
 }
 
-.navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
 .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
+}
+
+.signUp {
+  margin-top: 122px;
 }
 
 form {

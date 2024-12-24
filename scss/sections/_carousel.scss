@@ -1,10 +1,12 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
+.carousel {
+    padding: 0px;
+    border-radius: 58px;
+    overflow: hidden;
+    margin-top: 122px;
+}
 .carousel-item {
-    height: 100vh;
+    height: 80vh;
 }
 
 .carousel-item img {
@@ -12,12 +14,12 @@ html, body {
     height: 100%;
 }
 
-.navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
+// .navbar {
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     z-index: 10;
+// }
 
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5);

@@ -1,13 +1,31 @@
-
 .intro-section {
     background-image: url('../../images/AppBackground_00000.png');
-    height: 1080px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 
-    .left-side {
-        
-        height: 1080px;
-        background: rgba(0, 0, 0, 0.644);
-        backdrop-filter: blur(74.3499984741211px);
-        padding: 0px 50px;
+    .container-fluid {
+        height: 100%; /* Ensure the container takes the full height */
+
+        .row {
+            height: 100%; /* Ensure the row takes the full height */
+
+            .left-side {
+                height: 100%; /* Make the left-side div take the full height of the intro-section */
+                background: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(40px);
+                padding: 10vh 5vw 10vh 5vw;
+            }
+        }
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        .left-side {
+            padding: 20px; /* Adjust padding for smaller screens */
+        }
     }
 }
