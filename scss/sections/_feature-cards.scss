@@ -6,16 +6,22 @@ $border-radius: 20px;
     .row {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 20px; // Add padding to prevent touching the edges
 
         .col-md-3 {
             display: flex;
             flex-direction: column;
+            width: 390px;
+            max-width: 80vw;
 
             .card {
                 border-radius: $border-radius;
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+                width: 390px;
+                max-width: 80vw;
         
                 img {
                     width: 100%;

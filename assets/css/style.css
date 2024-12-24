@@ -11867,17 +11867,36 @@ body {
   letter-spacing: -0.456px;
 }
 
+.navbar {
+  width: 100vw;
+}
+.navbar button {
+  padding: 16px;
+  color: #fff;
+  background: rgba(91, 91, 91, 0.33);
+  backdrop-filter: blur(20.25px);
+  border-radius: 64px;
+  border: none;
+  outline: none;
+}
+.navbar button .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Change the stroke color to white (rgba(255, 255, 255, 1)) */
+}
+
 .bar {
   position: fixed;
   padding: 22px 40px;
 }
 .bar ul,
 .bar .navbar-brand {
+  display: flex;
   border-radius: 64px;
-  background: rgba(0, 0, 0, 0.42);
+  background: rgba(91, 91, 91, 0.33);
   backdrop-filter: blur(20.25px);
   padding: 16px 24px;
   gap: 15px;
+  width: auto; /* Ensure it only takes up the space it needs */
 }
 .bar a {
   color: #fff;
@@ -11918,16 +11937,22 @@ body {
 .app-features .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 20px;
 }
 .app-features .row .col-md-3 {
   display: flex;
   flex-direction: column;
+  width: 390px;
+  max-width: 80vw;
 }
 .app-features .row .col-md-3 .card {
   border-radius: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
+  width: 390px;
+  max-width: 80vw;
 }
 .app-features .row .col-md-3 .card img {
   width: 100%;
@@ -11965,6 +11990,10 @@ body {
 .un-goals .col-md-7 .image-grid img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+.un-goals .col-md-7 .image-grid img:hover {
+  transform: translateY(-5px) scale(1.025); /* Move the image up slightly on hover */
 }
 
 .carousel {
@@ -11989,7 +12018,7 @@ body {
   border-radius: 10px;
 }
 
-.signUp {
+.signUp-container {
   margin-top: 122px;
 }
 

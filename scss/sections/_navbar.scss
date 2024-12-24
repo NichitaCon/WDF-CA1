@@ -1,15 +1,37 @@
+.navbar {
+    width: 100vw;
+
+    button {
+        padding: 16px;
+        color: #fff;
+        background: rgb(91 91 91 / 33%);
+        backdrop-filter: blur(20.25px);
+        border-radius: 64px;
+        border: none;
+        outline: none;
+        
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            /* Change the stroke color to white (rgba(255, 255, 255, 1)) */
+        }
+    }
+}
+
 .bar {
   position: fixed;
   padding: 22px 40px;
 
-  ul,
-  .navbar-brand {
+ul,
+.navbar-brand {
+    display: flex;
     border-radius: 64px;
-    background: rgba(0, 0, 0, 0.42);
+    background: rgb(91 91 91 / 33%);
     backdrop-filter: blur(20.25px);
     padding: 16px 24px;
     gap: 15px;
-  }
+    width: auto; /* Ensure it only takes up the space it needs */
+}
 
   a {
     color: #fff;
