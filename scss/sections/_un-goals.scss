@@ -1,0 +1,29 @@
+.un-goals {
+
+    background-color: white;
+
+    .left-side {
+        h2 {
+            font-size: 48px;
+            font-weight: 500 !important;
+        }
+        .section-description {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .col-md-7 {
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
